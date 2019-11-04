@@ -1,0 +1,61 @@
+\documentclass[8pt]{beamer}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{upquote}
+\usepackage{graphicx}
+
+\usetheme{Warsaw}
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}
+    \insertsectionhead\par%
+    \vspace{2em}
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+\AtBeginSubsection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}
+    \insertsectionhead\par%
+    \vspace{1em}
+    \insertsubsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+\title{*BSD}
+\author{Thomas de Grivel {\tt thoxdg@gmail.com}}
+\institute{http://kmx.io}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{UNIX}
+\subsection{Introduction}
+
+\begin{frame}
+  \frametitle{UNIX}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width = 11cm]{unix-history.png}
+    \label{UNIX}
+  \end{figure}
+\end{frame}
+
+\end{document}
